@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+h1,
+span {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 2rem;
+  opacity: 1;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+h1 {
+  font-size: 1.2rem;
+  bottom: 20px;
+}
