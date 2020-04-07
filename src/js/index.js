@@ -58,6 +58,9 @@ Promise.all([flowsData, locations]).then(([flowsData, locations]) => {
       "place-city-md-s",
       "state-label-lg",
       "place-capital-city-n",
+      "china-place-city_medium", //隐藏中等城市
+      "china-place-city_small", //隐藏小城市
+      "place-city-sm", //隐藏外国小城市
     ];
     for (var i = 0; i < toggleLableLayerIds.length; i++) {
       var id = toggleLableLayerIds[i];
@@ -313,7 +316,7 @@ Promise.all([flowsData, locations]).then(([flowsData, locations]) => {
           ].join(""),
         }))
         .filter(function (d) {
-          return d.year == 2020317;
+          return d.year == 202043;
         });
       console.log(flows);
       flows.sort((a, b) => d3.ascending(a.count, b.count));
